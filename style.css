@@ -1,10 +1,105 @@
+/* Basic Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    background-color: #e0f7fa; /* Light cyan background */
+    color: #333;
 }
 
-h1 {
-    color: #333;
+/* Navigation Bar */
+nav {
+    background: linear-gradient(to right, #009688, #004d40); /* Gradient background */
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center navigation items */
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: #00796b; /* Darker shade on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Main Content */
+.container {
+    padding: 40px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Larger shadow for depth */
+}
+
+.container h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #00796b; /* Teal color for headings */
+}
+
+.container h2 {
+    font-size: 2.2em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #004d40; /* Darker teal color for subheadings */
+}
+
+.container h3 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #004d40; /* Darker teal color for section headings */
+}
+
+.container p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #555; /* Darker text color for readability */
+}
+
+.button {
+    background-color: #00796b; /* Teal background */
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.button:hover {
+    background-color: #004d40; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #004d40, #009688); /* Gradient background */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.2); /* Shadow for depth */
 }
