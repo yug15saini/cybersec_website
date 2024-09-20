@@ -1,19 +1,19 @@
 /* General page styling */
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    background-color: #f5f5f5;
+    font-family: 'Courier New', monospace; /* Monospace font for a tech feel */
+    color: #00ff00; /* Bright green text */
+    background-color: #1e1e1e; /* Dark background */
     line-height: 1.6;
 }
 
 h1, h2, h3 {
-    color: #222;
-    font-family: 'Poppins', sans-serif;
+    color: #ffffff; /* White headings for contrast */
+    font-family: 'Courier New', monospace; /* Keep monospace for headings */
 }
 
 p {
-    color: #555;
+    color: #bfbfbf; /* Light gray for paragraphs */
     font-size: 1.1em;
 }
 
@@ -26,14 +26,19 @@ p {
 }
 
 /* Navigation bar styling */
+nav {
+    height: 80px; /* Fixed height for the navigation bar */
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #0073e6;
+    background-color: #333333; /* Darker background for nav */
     display: flex;
-    justify-content: space-around;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center; /* Center items vertically */
+    height: 100%; /* Ensure ul takes the full height */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 nav ul li {
@@ -42,7 +47,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    color: white;
+    color: #00ff00; /* Green text */
     text-align: center;
     padding: 15px 20px;
     text-decoration: none;
@@ -52,11 +57,23 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #005bb5;
+    background-color: #007700; /* Dark green on hover */
+}
+
+/* Logo styling */
+nav .logo {
+    height: 50px; /* Logo size */
+    margin-right: 15px; /* Space between logo and navigation items */
 }
 
 /* Header section styling */
-
+header {
+    background: url('images/cybersecurity-banner.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7); /* Dark overlay */
+}
 
 /* Grid layout for homepage sections */
 .grid-container {
@@ -67,33 +84,38 @@ nav ul li a:hover {
 }
 
 .grid-item {
-    background-color: white;
+    background-color: #333333; /* Dark background for items */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(255, 254, 254, 0.5);
     transition: transform 0.3s ease;
     text-align: center;
 }
 
 .grid-item:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px); /* Slight lift effect on hover */
 }
 
+.grid-item h3 a{
+    color: #00ff00;
+}
 .grid-item h3 {
     font-size: 1.4em;
-    color: #0073e6;
+    color: #f2f8f2; /* Green color for headings */
     margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Adding a shadow for better visibility */
 }
+
 
 .grid-item p {
     font-size: 1em;
-    color: #555;
+    color: #e6e5e5; /* Light gray for paragraphs */
 }
 
 /* Footer styling */
 footer {
-    background-color: #0073e6;
-    color: white;
+    background-color: #333333; /* Dark footer */
+    color: #00ff00; /* Green text */
     text-align: center;
     padding: 15px 0;
     font-size: 0.9em;
@@ -113,7 +135,7 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Button styling */
@@ -121,7 +143,7 @@ a.button {
     display: inline-block;
     padding: 10px 20px;
     color: white;
-    background-color: #0073e6;
+    background-color: #ffffff; /* Dark green */
     text-decoration: none;
     font-size: 1.1em;
     border-radius: 5px;
@@ -130,5 +152,5 @@ a.button {
 }
 
 a.button:hover {
-    background-color: #005bb5;
+    background-color: #005500; /* Darker green on hover */
 }
