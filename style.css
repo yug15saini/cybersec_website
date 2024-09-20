@@ -44,7 +44,11 @@ nav ul {
 nav ul li {
     margin: 0;
 }
-
+.login{
+    display: flex;
+    position: absolute;
+    right: 0;
+}
 nav ul li a {
     display: block;
     color: #00ff00; /* Green text */
@@ -154,3 +158,37 @@ a.button {
 a.button:hover {
     background-color: #005500; /* Darker green on hover */
 }
+form {
+    background-color: #333333; /* Dark background for form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+label {
+    color: #ffffff; /* White text for labels */
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0073e6; /* Button color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb5; /* Darker button on hover */
+}
+
