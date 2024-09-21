@@ -3,25 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - CyberVerse</title>
+    <title>CyberVerse - Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html"><img src="Image/Cyberverse.png" alt="Logo" class="logo"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="whatiscybersecurity.html">What is Cybersecurity?</a></li>
+            <li><a href="vapt.html">VAPT</a></li>
+            <li><a href="dfir.html">DFIR</a></li>
+            <li><a href="linux.html">Linux for Cybersecurity</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
         <h1>Login to CyberVerse</h1>
-        <form action="your_login_endpoint" method="POST"> <!-- Replace with your login endpoint -->
+        <p>Secure your account and access exclusive content.</p>
+    </header>
+
+    <!-- Login Form -->
+    <div class="container">
+        <form>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
-            
+
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-            
+
             <button type="submit">Login</button>
         </form>
     </div>
 
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 CyberVerse. All rights reserved.</p>
     </footer>
+
 </body>
 </html>

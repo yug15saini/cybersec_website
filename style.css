@@ -159,14 +159,16 @@ a.button:hover {
     background-color: #005500; /* Darker green on hover */
 }
 form {
-    background-color: #333333; /* Dark background for form */
-    padding: 20px;
+    background-color: #333333;
+    padding: 30px; /* Increased padding for a larger form */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 350px; /* Larger width for the form */
+    margin: 40px auto; /* Center the form and add space at the top */
 }
 
 label {
-    color: #ffffff; /* White text for labels */
+    color: #00ff33;
     display: block;
     margin: 10px 0 5px;
 }
@@ -177,18 +179,21 @@ input {
     margin-bottom: 15px;
     border: none;
     border-radius: 5px;
+    height: 40px; /* Increased input height */
 }
 
 button {
-    background-color: #0073e6; /* Button color */
+    background-color: #0073e6;
     color: white;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
+    height: 45px; /* Larger button */
 }
 
 button:hover {
-    background-color: #005bb5; /* Darker button on hover */
+    background-color: #005bb5;
 }
 
