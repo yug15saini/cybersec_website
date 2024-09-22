@@ -17,24 +17,159 @@
             <li><a href="vapt.html">VAPT</a></li>
             <li><a href="dfir.html">DFIR</a></li>
             <li><a href="linux.html">Linux for Cybersecurity</a></li>
-            <div class=" login">
-                <li ><a href="login.html">Login</a></li>
-                <li ><a href="signup.html">Signup</a></li>
+            <div class="login">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
             </div>
         </ul>
     </nav>
 
     <div class="container">
-        <h2>Linux for Cybersecurity</h2>
+        <h2>Identify the Linux Design Philosophy</h2>
         <p>
-            Linux is a widely-used open-source operating system, favored by cybersecurity professionals for its security, flexibility, and extensive range of security tools.
+            One of the first operating systems still in use is Unix. It was developed in 1969 but was never made available as open-source software. Instead, a variety of tech companies, such as IBM, Hewlett-Packard, and AT&T, were linked to Unix versions. The multiple Unix "flavours" that each corporation has exclusive rights to use are referred to as Unix versions.
         </p>
-        <h3>Why Linux is Essential for Cybersecurity</h3>
+        <p>
+            Two of the three main operating systems available today (Linux, macOS, and Windows) have their origins in Unix. The Linux kernel and many other standards are shared by the macOS kernel, which was developed from a Unix variant called BSD (Berkeley Software Distribution). Apple's OS is not, however, a FOSS (free and open-source software). Another proprietary kernel with a more stringent licensing scheme is used by Microsoft Windows.
+        </p>
+
+        <h3>Traits of Linux OS</h3>
         <ul>
-            <li><strong>Open-Source:</strong> Allows full control over security settings and configurations.</li>
-            <li><strong>Security Tools:</strong> Linux distributions like Kali Linux and Parrot OS offer a wide range of pre-installed cybersecurity tools.</li>
-            <li><strong>Stable and Lightweight:</strong> Linux systems are known for their stability and resource efficiency, making them ideal for running security applications.</li>
+            <li><strong>Free:</strong> There is no licensing fee or anything with Linux.</li>
+            <li><strong>Support:</strong> There is no community-driven support with Linux.</li>
+            <li><strong>Security:</strong> Because of the open-source nature of Linux and its associated software, many developers can and do review code for vulnerabilities.</li>
+            <li><strong>Performance:</strong> Linux provides better performance when compared to other operating systems.</li>
+            <li><strong>Software availability:</strong> Fewer or less familiar software options may exist, especially for nonbusiness applications, such as games.</li>
+            <li><strong>Learning:</strong> Some feel Linux is a bit difficult as compared to Windows and Mac.</li>
         </ul>
+
+        <h3>Linux Distribution</h3>
+        <p>
+            Due to the fact that anyone can develop and distribute their own version of Linux, there are countless alternatives. Distributions (or "distros" for short) are the collective term for these distinct releases. Distributions are specialised Linux releases that focus on a particular issue, like system security or application hosting.
+        </p>
+        <p>Some of the most common distros include:</p>
+        <ul>
+            <li>Fedora Linux</li>
+            <li>Ubuntu Desktop, Server, Core</li>
+            <li>Red Hat Enterprise Linux (RHEL)</li>
+            <li>Linux Mint</li>
+        </ul>
+
+        <h3>The Command-Line Interface</h3>
+        <p>
+            One of the amazing features of Linux compared to other OS is its CLI. Linux administrators on a daily basis use its CLI for daily tasks.
+        </p>
+        <p>On comparing to the GUI, CLI has advantages like:</p>
+        <ul>
+            <li><strong>Quicker:</strong> It's usually fast as commands can be executed faster.</li>
+            <li><strong>Performance:</strong> CLI consumes little or lesser hardware.</li>
+            <li><strong>Scriptable:</strong> CLI commands can be written in a text file and can be used to execute a series of scripts or commands.</li>
+        </ul>
+
+        <h3>Enter Shell Commands</h3>
+        <p>
+            A piece of software called a shell provides the CLI. The user's input is accepted by the shell, which checks it for syntax before returning the user's output. Bash is the default shell for the majority of Linux distributions, thus sysadmins should be familiar with it.
+        </p>
+
+        <h3>Bash Syntax</h3>
+        <p>When entering the command, it should be in a specific structure and syntax which comprises of:</p>
+        <ul>
+            <li><strong>Command:</strong> Primary instruction is given to the system.</li>
+            <li><strong>Sub Command:</strong> A secondary instruction covering the primary command.</li>
+            <li><strong>Option:</strong> It is a type of command modifier that can change the output of the command.</li>
+            <li><strong>Argument:</strong> It is the object on which action is being made.</li>
+        </ul>
+
+        <h3>Normal Syntax</h3>
+        <p>
+            The three main parts of the Bash syntax are used in the standard command syntax: the command, options to change the command, and an argument for the command to operate on. As an example, we can see below several ways to use the <code>ls</code> command.
+        </p>
+
+        <p><strong>ls</strong>: This command is used to list the directory and files present in the system. By default, when you run the <code>ls</code> command it will take the present working directory.</p>
+
+        <p><strong>ls -la</strong>: List all content in a long format where <code>ls</code> stands for list, <code>-a</code> stands for all and shows hidden files and directories, <code>-l</code> stands for long and displays the files and directories in a detailed format, including file permissions, ownership, size, and modification time.</p>
+
+        <p><strong>ls /var/log</strong>: List the content of the specified directory.</p>
+
+        <h3>Command Sub Command</h3>
+        <p>
+            Many Linux commands allow the use of subcommands to define the precise data that a sysadmin requires. The core structure of typical command syntax is not used for these commands. The system administrator types the principal command, a space, and a subcommand, followed by an argument.
+        </p>
+        <p>
+            Below we can see the example of the <code>ip</code> command:
+        </p>
+
+        <p><strong>ip addr</strong>: Display all the IP addresses for all interfaces.</p>
+
+        <p><strong>ip addr show eth0</strong>: Shows information about eth0 only.</p>
+
+        <p><strong>ip help</strong>: Display basic help about the <code>ip</code> command.</p>
+
+        <h3>Cat Command</h3>
+        <p>
+            The <code>cat</code> command is a commonly used command in Bash to read, concatenate and display the contents of one or more files. The basic syntax for the <code>cat</code> command is:
+        </p>
+
+        <p><code>cat {filename.txt}</code></p>
+
+        <h3>Basic Bash Commands</h3>
+        <p>There are lots of commands in Bash. Some of the most often used commands have to do with managing files, such as seeing files and their contents, changing directories (or folders), or modifying files.</p>
+
+        <table>
+            <tr>
+                <th>Command</th>
+                <th>Usage</th>
+            </tr>
+            <tr>
+                <td><code>ls</code></td>
+                <td>List the directories</td>
+            </tr>
+            <tr>
+                <td><code>touch</code></td>
+                <td>Create a new empty file</td>
+            </tr>
+            <tr>
+                <td><code>cat</code></td>
+                <td>Display the content of a file</td>
+            </tr>
+            <tr>
+                <td><code>cd</code></td>
+                <td>Change the directory</td>
+            </tr>
+            <tr>
+                <td><code>less</code></td>
+                <td>Display the content of the file that fits on the screen</td>
+            </tr>
+            <tr>
+                <td><code>shutdown</code></td>
+                <td>As the name suggests, shutdown the system</td>
+            </tr>
+        </table>
+
+        <h3>Get Help with Linux</h3>
+        <p>
+            In Linux, there are numerous ways to receive assistance. The manual pages, or "man pages" for short, are the most prevalent. The system and some apps both have built-in documentation. There are other online resources as well, and they are frequently the most recent. It's fairly typical to utilize the man pages as a quick reference for presenting the available options because there are so many commands and options for each command.
+        </p>
+        <p>
+            When working as a new Linux user one can get stuck but can use the help of <code>man</code> as man pages are the primary reference for standard Linux commands. The man pages provide syntax information and usage examples. Perhaps most important, the available options are displayed.
+        </p>
+
+        <p>The syntax for using the <code>man</code> command is:</p>
+
+        <p><code>man {command}</code></p>
+
+        <h3>Man Page Navigation</h3>
+        <ul>
+            <li><strong>Home</strong> -- Move to the beginning of the man page.</li>
+            <li><strong>End</strong> -- Move to the end of the man page.</li>
+            <li><strong>Page Up</strong> -- Scroll up one page.</li>
+            <li><strong>Page Down</strong> -- Scroll down one page.</li>
+            <li><strong>/</strong> -- Begin a search for a term or text string.</li>
+            <li><strong>n</strong> -- Move to the next occurrence of the search term.</li>
+            <li><strong>p</strong> -- Move to the previous occurrence of the search term.</li>
+            <li><strong>q</strong> -- Exit the man page, and return to the shell.</li>
+        </ul>
+
     </div>
 
     <footer>
